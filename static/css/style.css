@@ -55,7 +55,7 @@
 
 .container2::before {
     content: "";
-    background: url(background3.jpg) no-repeat center center/cover;
+    
     /* background: url(background3.jpg) center center cover no-repeat fixed; */
     position: absolute;
     width: 100%;
