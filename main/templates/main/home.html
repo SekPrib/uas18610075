@@ -2,10 +2,100 @@
 {% load static %}
 
 {% block meta %}
-<title>Hello, world!</title>
+<title>AES Encryption and Decryption</title>
 {% endblock meta %}
 
 {% block content %}
-  <h1>Hello, world!</h1>
-  <p><img src="{% static 'img/django-logo-negative.svg' %}"></p>
+  <!-- <h1>Hello, world!</h1>
+  <p><img src="{% static 'img/django-logo-negative.svg' %}"></p> -->
+
+  <!-- <nav class="container2 sticky">
+    <div class="navbar">
+        <div class="navbar-logo">
+            <ul class="navbar-title">
+                <li><img src="{% static 'img/django-logo-negative.svg' %}" class="logo" id="logo"><span><a href="index.html">Encrypto</a></span></li>
+            </ul>
+            <ul class="navbar-option">
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </div>
+        <ul class="navbar-feedback">
+            <li><a href="feedback.html"><u>Give us feedback</u></a></li>
+        </ul>
+    </div>
+</nav> -->
+<div class="container">
+    <div class="jumbotron" id="jumbo">
+        <div class="row1">
+            <div class="column" id="first">
+                K
+            </div>
+            <div class="column" id="second">
+                R
+            </div>
+            <div class="column" id="third">
+                I
+            </div>
+            <div class="column" id="fourth">
+                P
+            </div>
+            <div class="column" id="fifth">
+                T
+            </div>
+            <div class="column" id="sixth">
+                O
+            </div>
+            <div class="column" id="seventh">
+                -
+            </div>
+            <div class="column" id="eighth">
+                -
+            </div>
+        </div>
+        <div class="line" id="line">
+        </div>
+        <div class="heading">
+            <h2>Enkripsi dan Dekripsi Text</h2>
+            <p>Siti Habibatul Ma'rifah - 18610075</p>
+        </div>
+    </div>
+    <div class="encrypt-decrypt">
+        <div class="encrypt-box">
+            <div class="encrypt-upper">
+                <h2>Enkripsi dengan Algoritma AES</h2>
+                <h4>Input Plaintext</h4>
+                <textarea type="text" id="raw-data" class="box1" placeholder="Masukkan plain text anda"></textarea>
+                <h4>Input Kunci</h4>
+                <input type="text" minlength="4" id="enc-password" class="password"
+                    placeholder="Masukkan kunci enkripsi">
+                <button class="btn btn-light btn-md btn-position" onclick="encr()">Encrypt</button>
+            </div>
+        </div>
+        <div class="decrypt-box">
+            <div class="decrypt-upper">
+                <h2>Dekripsi dengan Algoritma AES</h2>
+                <h4>input Ciphertext</h4>
+                <textarea type="text" id="cipher-data" class="box2"
+                    placeholder="Masukkan cipher text anda"></textarea>
+                <h4>Input Kunci</h4>
+                <input type="text" minlength="4" id="dec-password" class="password"
+                    placeholder="Masukkan kunci dekripsi">
+                <button class="btn btn-light btn-md btn-position" onclick="decr()">Decrypt</button>
+            </div>
+        </div>
+    </div>
+    <div class="result1">
+        <div class="encrypt-bottom">
+            <h3>Encrypted Text</h3>
+            <textarea readonly id="display1" class="output1"></textarea>
+        </div>
+        <div class="decrypt-bottom">
+            <h3>Decrypted Text</h3>
+            <textarea readonly id="display2" class="output2"></textarea>
+        </div>
+
+    </div>
+    </div>
 {% endblock content %}
